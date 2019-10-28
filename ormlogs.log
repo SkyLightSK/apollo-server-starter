@@ -1,0 +1,378 @@
+[2019-10-27T01:56:16.019Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T01:56:16.140Z][QUERY]: CREATE TABLE "migrations" ("id" SERIAL NOT NULL, "timestamp" bigint NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_8c82d7f526340ab734260ea46be" PRIMARY KEY ("id"))
+[2019-10-27T01:56:16.314Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T01:56:53.238Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T01:56:53.251Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T01:56:53.253Z]No migrations are pending
+[2019-10-27T02:18:58.339Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T02:18:58.350Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T02:18:58.353Z]0 migrations are already loaded in the database.
+[2019-10-27T02:18:58.354Z]1 migrations were found in the source code.
+[2019-10-27T02:18:58.354Z]1 migrations are new migrations that needs to be executed.
+[2019-10-27T02:18:58.355Z][QUERY]: START TRANSACTION
+[2019-10-27T02:18:58.360Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572142279650,"post1572142279650"]
+[2019-10-27T02:18:58.366Z]Migration post1572142279650 has been executed successfully.
+[2019-10-27T02:18:58.367Z][QUERY]: COMMIT
+[2019-10-27T02:20:52.586Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T02:20:52.597Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T02:22:36.335Z][QUERY]: SELECT "Photo"."id" AS "Photo_id", "Photo"."name" AS "Photo_name", "Photo"."description" AS "Photo_description", "Photo"."filename" AS "Photo_filename", "Photo"."views" AS "Photo_views", "Photo"."isPublished" AS "Photo_isPublished" FROM "photo" "Photo"
+[2019-10-27T07:16:09.116Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:16:09.266Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:16:09.296Z][QUERY]: START TRANSACTION
+[2019-10-27T07:16:09.303Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:16:09.313Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:09.370Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:09.370Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:16:09.374Z][QUERY]: ROLLBACK
+[2019-10-27T07:16:12.585Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:16:12.594Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:16:12.598Z][QUERY]: START TRANSACTION
+[2019-10-27T07:16:12.600Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:16:12.604Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:12.607Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:12.607Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:16:12.608Z][QUERY]: ROLLBACK
+[2019-10-27T07:16:15.823Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:16:15.834Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:16:15.838Z][QUERY]: START TRANSACTION
+[2019-10-27T07:16:15.840Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:16:15.843Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:15.847Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:15.847Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:16:15.848Z][QUERY]: ROLLBACK
+[2019-10-27T07:16:18.976Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:16:18.983Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:16:18.986Z][QUERY]: START TRANSACTION
+[2019-10-27T07:16:18.989Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:16:18.991Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:18.994Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:18.994Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:16:18.996Z][QUERY]: ROLLBACK
+[2019-10-27T07:16:22.197Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:16:22.205Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:16:22.208Z][QUERY]: START TRANSACTION
+[2019-10-27T07:16:22.210Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:16:22.213Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:22.216Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:22.216Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:16:22.218Z][QUERY]: ROLLBACK
+[2019-10-27T07:16:25.317Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:16:25.330Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:16:25.335Z][QUERY]: START TRANSACTION
+[2019-10-27T07:16:25.337Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:16:25.341Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:25.347Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:25.347Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:16:25.349Z][QUERY]: ROLLBACK
+[2019-10-27T07:16:28.456Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:16:28.467Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:16:28.470Z][QUERY]: START TRANSACTION
+[2019-10-27T07:16:28.473Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:16:28.475Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:28.479Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:28.479Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:16:28.481Z][QUERY]: ROLLBACK
+[2019-10-27T07:16:31.637Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:16:31.646Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:16:31.649Z][QUERY]: START TRANSACTION
+[2019-10-27T07:16:31.650Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:16:31.653Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:31.656Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:31.656Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:16:31.657Z][QUERY]: ROLLBACK
+[2019-10-27T07:16:34.787Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:16:34.798Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:16:34.801Z][QUERY]: START TRANSACTION
+[2019-10-27T07:16:34.804Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:16:34.808Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:34.813Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:16:34.813Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:16:34.821Z][QUERY]: ROLLBACK
+[2019-10-27T07:17:50.201Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:17:50.220Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:17:50.231Z][QUERY]: START TRANSACTION
+[2019-10-27T07:17:50.237Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:17:50.245Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:17:50.261Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:17:50.261Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:17:50.264Z][QUERY]: ROLLBACK
+[2019-10-27T07:17:53.372Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:17:53.382Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:17:53.385Z][QUERY]: START TRANSACTION
+[2019-10-27T07:17:53.387Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:17:53.390Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:17:53.395Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:17:53.395Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:17:53.396Z][QUERY]: ROLLBACK
+[2019-10-27T07:17:56.552Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:17:56.560Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:17:56.563Z][QUERY]: START TRANSACTION
+[2019-10-27T07:17:56.564Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:17:56.567Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:17:56.571Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:17:56.571Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:17:56.572Z][QUERY]: ROLLBACK
+[2019-10-27T07:17:59.719Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:17:59.726Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:17:59.729Z][QUERY]: START TRANSACTION
+[2019-10-27T07:17:59.732Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:17:59.734Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:17:59.737Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:17:59.737Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:17:59.739Z][QUERY]: ROLLBACK
+[2019-10-27T07:18:17.429Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:18:17.447Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:18:17.455Z][QUERY]: START TRANSACTION
+[2019-10-27T07:18:17.459Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:18:17.462Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:18:17.484Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:18:17.484Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:18:17.486Z][QUERY]: ROLLBACK
+[2019-10-27T07:20:25.703Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:20:25.713Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:20:25.742Z][QUERY]: START TRANSACTION
+[2019-10-27T07:20:25.747Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:20:25.752Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:20:25.757Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:20:25.757Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:20:25.759Z][QUERY]: ROLLBACK
+[2019-10-27T07:23:22.074Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:23:22.091Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:23:22.094Z][QUERY]: START TRANSACTION
+[2019-10-27T07:23:22.102Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:23:22.105Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:22.110Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:22.110Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:23:22.113Z][QUERY]: ROLLBACK
+[2019-10-27T07:23:25.338Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:23:25.349Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:23:25.353Z][QUERY]: START TRANSACTION
+[2019-10-27T07:23:25.355Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:23:25.359Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:25.364Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:25.364Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:23:25.365Z][QUERY]: ROLLBACK
+[2019-10-27T07:23:28.689Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:23:28.696Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:23:28.698Z][QUERY]: START TRANSACTION
+[2019-10-27T07:23:28.700Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:23:28.702Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:28.705Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:28.705Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:23:28.706Z][QUERY]: ROLLBACK
+[2019-10-27T07:23:31.910Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:23:31.918Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:23:31.922Z][QUERY]: START TRANSACTION
+[2019-10-27T07:23:31.923Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:23:31.926Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:31.929Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:31.929Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:23:31.931Z][QUERY]: ROLLBACK
+[2019-10-27T07:23:35.036Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:23:35.047Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:23:35.050Z][QUERY]: START TRANSACTION
+[2019-10-27T07:23:35.053Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:23:35.057Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:35.062Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:35.062Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:23:35.063Z][QUERY]: ROLLBACK
+[2019-10-27T07:23:38.270Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:23:38.277Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:23:38.279Z][QUERY]: START TRANSACTION
+[2019-10-27T07:23:38.281Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:23:38.283Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:38.286Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:38.286Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:23:38.287Z][QUERY]: ROLLBACK
+[2019-10-27T07:23:41.476Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:23:41.493Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:23:41.509Z][QUERY]: START TRANSACTION
+[2019-10-27T07:23:41.512Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:23:41.516Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:41.521Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:41.521Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:23:41.524Z][QUERY]: ROLLBACK
+[2019-10-27T07:23:44.677Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:23:44.686Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:23:44.688Z][QUERY]: START TRANSACTION
+[2019-10-27T07:23:44.690Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:23:44.693Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:44.697Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:44.697Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:23:44.698Z][QUERY]: ROLLBACK
+[2019-10-27T07:23:47.867Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:23:47.874Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:23:47.877Z][QUERY]: START TRANSACTION
+[2019-10-27T07:23:47.879Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:23:47.881Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:47.884Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:23:47.884Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:23:47.885Z][QUERY]: ROLLBACK
+[2019-10-27T07:24:17.336Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:24:17.348Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:24:17.352Z]1 migrations are already loaded in the database.
+[2019-10-27T07:24:17.352Z]3 migrations were found in the source code.
+[2019-10-27T07:24:17.354Z]post1572142279650 is the last executed migration. It was executed on Sun Oct 27 2019 04:11:19 GMT+0200 (Восточная Европа, стандартное время).
+[2019-10-27T07:24:17.355Z]3 migrations are new migrations that needs to be executed.
+[2019-10-27T07:24:17.356Z][QUERY]: START TRANSACTION
+[2019-10-27T07:24:17.360Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:24:17.363Z]Migration PhotoPascal1572144895851 has been executed successfully.
+[2019-10-27T07:24:17.364Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:24:17.368Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:24:17.368Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:24:17.370Z][QUERY]: ROLLBACK
+[2019-10-27T07:25:13.632Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:25:13.642Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:25:13.645Z]No migrations are pending
+[2019-10-27T07:25:41.462Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:25:41.480Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:25:41.484Z][QUERY]: START TRANSACTION
+[2019-10-27T07:25:41.488Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:25:41.494Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:25:41.499Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:25:41.499Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:25:41.500Z][QUERY]: ROLLBACK
+[2019-10-27T07:27:24.403Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:27:24.413Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:27:24.416Z]1 migrations are already loaded in the database.
+[2019-10-27T07:27:24.417Z]1 migrations were found in the source code.
+[2019-10-27T07:27:24.418Z]post1572142279650 is the last executed migration. It was executed on Sun Oct 27 2019 04:11:19 GMT+0200 (Восточная Европа, стандартное время).
+[2019-10-27T07:27:24.419Z]1 migrations are new migrations that needs to be executed.
+[2019-10-27T07:27:24.420Z][QUERY]: START TRANSACTION
+[2019-10-27T07:27:24.424Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572161218607,"post1572161218607"]
+[2019-10-27T07:27:24.427Z]Migration post1572161218607 has been executed successfully.
+[2019-10-27T07:27:24.429Z][QUERY]: COMMIT
+[2019-10-27T07:28:42.037Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:28:42.072Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:28:42.093Z][QUERY]: START TRANSACTION
+[2019-10-27T07:28:42.097Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:28:42.100Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:42.104Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:42.104Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:28:42.106Z][QUERY]: ROLLBACK
+[2019-10-27T07:28:45.325Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:28:45.336Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:28:45.339Z][QUERY]: START TRANSACTION
+[2019-10-27T07:28:45.342Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:28:45.345Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:45.350Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:45.350Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:28:45.352Z][QUERY]: ROLLBACK
+[2019-10-27T07:28:48.584Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:28:48.595Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:28:48.598Z][QUERY]: START TRANSACTION
+[2019-10-27T07:28:48.601Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:28:48.604Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:48.609Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:48.609Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:28:48.610Z][QUERY]: ROLLBACK
+[2019-10-27T07:28:51.801Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:28:51.809Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:28:51.812Z][QUERY]: START TRANSACTION
+[2019-10-27T07:28:51.814Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:28:51.816Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:51.819Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:51.819Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:28:51.821Z][QUERY]: ROLLBACK
+[2019-10-27T07:28:55.030Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:28:55.041Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:28:55.044Z][QUERY]: START TRANSACTION
+[2019-10-27T07:28:55.047Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:28:55.052Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:55.059Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:55.059Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:28:55.060Z][QUERY]: ROLLBACK
+[2019-10-27T07:28:58.255Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:28:58.266Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:28:58.270Z][QUERY]: START TRANSACTION
+[2019-10-27T07:28:58.273Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:28:58.276Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:58.281Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:28:58.281Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:28:58.283Z][QUERY]: ROLLBACK
+[2019-10-27T07:29:01.489Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:29:01.498Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:29:01.501Z][QUERY]: START TRANSACTION
+[2019-10-27T07:29:01.504Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:29:01.507Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:29:01.511Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:29:01.511Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:29:01.513Z][QUERY]: ROLLBACK
+[2019-10-27T07:29:04.686Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:29:04.696Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:29:04.698Z][QUERY]: START TRANSACTION
+[2019-10-27T07:29:04.700Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:29:04.702Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:29:04.706Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:29:04.706Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:29:04.707Z][QUERY]: ROLLBACK
+[2019-10-27T07:29:08.006Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:29:08.013Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:29:08.015Z][QUERY]: START TRANSACTION
+[2019-10-27T07:29:08.017Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572144895851,"PhotoPascal1572144895851"]
+[2019-10-27T07:29:08.019Z][QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:29:08.022Z][FAILED QUERY]: ALTER TABLE "photo" ADD "coins" integer NOT NULL
+[2019-10-27T07:29:08.022Z][QUERY ERROR]: error: столбец "coins" содержит значения NULL
+[2019-10-27T07:29:08.023Z][QUERY]: ROLLBACK
+[2019-10-27T07:29:44.265Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:29:44.276Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:30:10.199Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:30:10.210Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:30:43.770Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:30:43.796Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T07:31:23.809Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T07:31:23.823Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T21:38:50.805Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T21:38:50.971Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T21:55:24.565Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T21:55:24.710Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:17:59.568Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:17:59.723Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:19:13.370Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:19:13.423Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:20:51.150Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:20:51.207Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:21:12.456Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:21:12.478Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:24:20.071Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:24:20.085Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:24:57.971Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:24:57.983Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:30:13.024Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:30:13.039Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:30:32.197Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:30:32.212Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:30:55.220Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:30:55.240Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:31:11.079Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:31:11.092Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:43:20.928Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:43:21.016Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T22:43:21.031Z][QUERY]: START TRANSACTION
+[2019-10-27T22:43:21.034Z][QUERY]: CREATE TABLE "todo_entity" ("id" SERIAL NOT NULL, "text" character varying NOT NULL, "completed" boolean NOT NULL, CONSTRAINT "PK_5e18fff6d62959da212066f2882" PRIMARY KEY ("id"))
+[2019-10-27T22:43:21.207Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572216122894,"todo1572216122894"]
+[2019-10-27T22:43:21.219Z][QUERY]: COMMIT
+[2019-10-27T22:44:17.059Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T22:44:17.207Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T23:11:38.823Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T23:11:38.899Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T23:12:10.793Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T23:12:11.091Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T23:12:11.107Z][QUERY]: START TRANSACTION
+[2019-10-27T23:12:11.577Z][QUERY]: CREATE TABLE "todo" ("id" SERIAL NOT NULL, "text" character varying NOT NULL, "completed" boolean NOT NULL, CONSTRAINT "PK_d429b7114371f6a35c5cb4776a7" PRIMARY KEY ("id"))
+[2019-10-27T23:12:11.703Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572217891250,"todo1572217891250"]
+[2019-10-27T23:12:11.722Z][QUERY]: COMMIT
+[2019-10-27T23:13:43.814Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T23:13:43.836Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T23:15:43.836Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T23:15:43.947Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T23:28:36.008Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T23:28:36.052Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T23:29:56.003Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T23:29:56.015Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T23:32:30.335Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-27T23:32:30.388Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-27T23:35:26.392Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-28T00:20:38.764Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-28T00:20:38.915Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-28T00:20:49.533Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
