@@ -5,6 +5,7 @@ import { Cat } from '../graphql.schema';
 import { CatsGuard } from './cats.guard';
 import { CatsService } from './cats.service';
 import { CreateCatDto } from './dto/create-cat.dto';
+import {GqlAuthGuard} from '../auth/gqlauth.guard';
 
 const pubSub = new PubSub();
 
@@ -13,9 +14,9 @@ export class CatsResolvers {
   constructor(private readonly catsService: CatsService) {}
 
   @Query()
-  @UseGuards(CatsGuard)
+  // @UseGuards(CatsGuard)
   async getCats() {
-    return await this.catsService.findAll();
+    this.catsService.findAll();
   }
 
   @Query('cat')
@@ -23,13 +24,14 @@ export class CatsResolvers {
     @Args('id', ParseIntPipe)
     id: number,
   ): Promise<Cat> {
-    return await this.catsService.findOneById(id);
+    return this.catsService.findOneById(id);
   }
 
   @Mutation('createCat')
-  async create(@Args('createCatInput') args: CreateCatDto): Promise<Cat> {
+  async create(@Args('createCatInput') args: CreateCatDto, _: any): Promise<Cat> {
+    console.log(_);
     const createdCat = await this.catsService.create(args);
-    pubSub.publish('catCreated', { catCreated: createdCat });
+    await pubSub.publish('catCreated', { catCreated: createdCat });
     return createdCat;
   }
 

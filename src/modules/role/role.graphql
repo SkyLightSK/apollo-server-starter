@@ -1,0 +1,29 @@
+type Query {
+  getRoles: [Role]
+#  role(id: ID!): Role
+}
+
+#type Mutation {
+#  createRole(createRoleInput: CreateRoleInput): Role
+#}
+
+#type Subscription {
+#  roleCreated: Role
+#}
+
+type Role {
+  id: Int
+  title: String
+  alias: String
+  createdAt: String
+  updatedAt: String
+  users: [User]
+}
+
+input CreateRoleInput {
+  id: Int
+  title: String
+  alias: String
+  createdAt: String
+  updatedAt: String
+}

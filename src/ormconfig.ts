@@ -12,10 +12,10 @@ import {ConnectionOptions} from 'typeorm';
 const config: ConnectionOptions = {
     type: 'postgres',
     host: 'localhost',
-    port: 5433,
+    port: 5432,
     username: 'postgres',
-    password: 'root',
-    database: 'postgres',
+    password: '1111',
+    database: 'apollo',
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
 
     // We are using migrations, synchronize should be set to false.

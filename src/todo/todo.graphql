@@ -1,8 +1,0 @@
-type Todo {
-  id: Int!
-  text: String!
-  completed: Boolean!
-}
-type Query {
-  todos: [Todo]
-}

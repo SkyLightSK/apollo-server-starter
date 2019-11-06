@@ -376,3 +376,1160 @@
 [2019-10-28T00:20:38.764Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
 [2019-10-28T00:20:38.915Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
 [2019-10-28T00:20:49.533Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-28T06:25:53.593Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-28T06:25:53.639Z][QUERY]: CREATE TABLE "migrations" ("id" SERIAL NOT NULL, "timestamp" bigint NOT NULL, "name" character varying NOT NULL, CONSTRAINT "PK_8c82d7f526340ab734260ea46be" PRIMARY KEY ("id"))
+[2019-10-28T06:25:53.888Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-28T06:25:53.936Z]0 migrations are already loaded in the database.
+[2019-10-28T06:25:53.939Z]2 migrations were found in the source code.
+[2019-10-28T06:25:53.944Z]2 migrations are new migrations that needs to be executed.
+[2019-10-28T06:25:53.947Z][QUERY]: START TRANSACTION
+[2019-10-28T06:25:53.958Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572161218607,"post1572161218607"]
+[2019-10-28T06:25:53.966Z]Migration post1572161218607 has been executed successfully.
+[2019-10-28T06:25:53.974Z][QUERY]: CREATE TABLE "todo" ("id" SERIAL NOT NULL, "text" character varying NOT NULL, "completed" boolean NOT NULL, CONSTRAINT "PK_d429b7114371f6a35c5cb4776a7" PRIMARY KEY ("id"))
+[2019-10-28T06:25:54.083Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572217891250,"todo1572217891250"]
+[2019-10-28T06:25:54.089Z]Migration todo1572217891250 has been executed successfully.
+[2019-10-28T06:25:54.093Z][QUERY]: COMMIT
+[2019-10-28T06:37:24.397Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-28T06:37:24.481Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-28T06:37:24.497Z][QUERY]: START TRANSACTION
+[2019-10-28T06:37:24.513Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572244058031,"work1572244058031"]
+[2019-10-28T06:37:24.527Z][QUERY]: COMMIT
+[2019-10-28T06:42:43.985Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-28T06:46:31.717Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-28T06:47:23.814Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-28T07:14:54.690Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-28T07:17:28.830Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-28T07:17:52.661Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-28T07:18:20.908Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-28T08:13:48.354Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-29T07:23:37.301Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T07:23:37.785Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T07:28:20.008Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T07:28:20.028Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:08:18.403Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:08:18.421Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:11:28.911Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:11:28.928Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:16:09.894Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:16:09.912Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:20:30.677Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:20:30.696Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:21:29.990Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:21:30.008Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:24:01.760Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:24:01.778Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:24:49.344Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:24:49.360Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:27:51.919Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:27:51.937Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:28:19.875Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:28:19.892Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:28:45.874Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:28:45.900Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:29:48.393Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:29:48.416Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T08:35:42.248Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T08:35:42.291Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T09:18:49.554Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T09:18:49.575Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T09:28:43.419Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T09:28:43.511Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T09:43:34.188Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T09:43:34.405Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T09:53:19.036Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T09:53:19.086Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T09:57:46.581Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T09:57:46.599Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T09:58:29.702Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T09:58:29.721Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T10:00:44.349Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T10:00:44.367Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T11:48:32.997Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T11:48:33.451Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T12:04:10.711Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T12:04:10.788Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T12:10:57.067Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T12:10:57.087Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:00:07.315Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:00:07.372Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:01:13.318Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:01:13.339Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:01:58.328Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:01:58.357Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:08:51.200Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:08:51.228Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:16:16.310Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:16:16.334Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:19:44.795Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:19:44.817Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:22:09.102Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:22:09.123Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:24:41.741Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:24:41.760Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:26:02.043Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:26:02.168Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:30:25.043Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:30:25.066Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:33:49.664Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:33:49.685Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:34:32.349Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:34:32.374Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:37:12.888Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:37:12.906Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:40:38.932Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:40:38.950Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:57:55.616Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:57:55.649Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T13:59:59.465Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T13:59:59.485Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T14:00:35.108Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T14:00:35.133Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T14:04:37.739Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T14:04:37.770Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T14:05:35.679Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T14:05:35.703Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T14:09:49.799Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T14:09:49.848Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T14:13:29.776Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T14:13:29.800Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T14:19:30.223Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T14:19:30.466Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T14:26:28.461Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T14:26:28.489Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-29T14:37:19.028Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-29T14:37:19.050Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T06:39:48.391Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T06:39:48.659Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T06:45:55.564Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T06:45:55.589Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T06:51:49.717Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T06:51:49.786Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T06:56:11.000Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T06:56:11.066Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T06:59:17.193Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T06:59:17.217Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T07:04:17.713Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T07:04:17.761Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T07:06:51.513Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T07:06:51.528Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T07:59:55.875Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T07:59:55.915Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T08:40:36.211Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T08:40:36.231Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T08:43:01.478Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T08:43:01.536Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T08:47:24.951Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T08:47:24.976Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T08:52:16.245Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T08:52:16.285Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T08:59:00.567Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T08:59:00.591Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T09:01:19.137Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T09:01:19.175Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T09:07:32.879Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T09:07:32.935Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T09:10:03.012Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T09:10:03.042Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T09:25:06.432Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T09:25:06.489Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T09:26:23.859Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T09:26:23.880Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T09:32:50.393Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T09:32:50.418Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T09:33:07.773Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T09:33:07.800Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T09:44:55.871Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T09:44:55.892Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T12:16:02.806Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T12:16:02.824Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T12:16:34.658Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T12:16:34.692Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T12:21:06.494Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T12:21:06.514Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T12:21:52.099Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T12:21:52.117Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T12:22:04.102Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T12:22:04.119Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T12:27:06.883Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T12:27:06.921Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T12:38:21.139Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T12:38:21.159Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T12:46:48.331Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T12:46:48.351Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T12:47:55.508Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T12:47:55.526Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T12:48:25.648Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T12:48:25.664Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T13:01:48.033Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T13:01:48.050Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T13:09:16.812Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T13:09:16.830Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T13:21:22.760Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T13:21:22.778Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T13:24:21.464Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T13:24:21.549Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T13:53:14.921Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T13:53:14.938Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T14:01:14.832Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T14:01:14.859Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T14:09:22.034Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T14:09:22.050Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T14:11:02.450Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T14:11:02.467Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T14:15:25.490Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T14:15:25.507Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T14:17:18.308Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T14:17:18.325Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T14:31:39.233Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T14:31:39.294Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T14:33:36.166Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T14:33:36.184Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T14:38:27.679Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T14:38:27.697Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-30T14:41:42.548Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-30T14:41:42.567Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T06:38:46.132Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T06:38:46.573Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:06:30.338Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:06:30.380Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:08:32.616Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:08:32.647Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:13:51.246Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:13:51.263Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:24:18.523Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:24:18.541Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:29:25.086Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:29:25.104Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:31:30.107Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:31:30.127Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:32:36.273Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:32:36.295Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:32:50.564Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:32:50.614Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:33:50.696Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:33:50.726Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:35:53.393Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:35:53.426Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:36:57.201Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:36:57.218Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:37:50.831Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:37:50.851Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:39:25.338Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:39:25.369Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:41:32.471Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:41:32.558Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:42:00.539Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:42:00.568Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:47:06.101Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:47:06.139Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:52:22.848Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:52:22.868Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:54:23.742Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:54:23.759Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:55:17.020Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:55:17.036Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T07:56:48.870Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T07:56:48.886Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:01:32.764Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:01:32.781Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:02:53.976Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:02:53.991Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:03:48.957Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:03:48.998Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:08:27.297Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:08:27.314Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:09:53.694Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:09:53.730Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:26:15.870Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:26:15.888Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:27:04.773Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:27:04.790Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:28:24.444Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:28:24.464Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:30:12.226Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:30:12.242Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:32:33.721Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:32:33.740Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:34:30.581Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:34:30.596Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:35:24.106Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:35:24.123Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:39:07.281Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:39:07.297Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:40:30.588Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:40:30.604Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:41:14.723Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:41:14.740Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:43:19.237Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:43:19.261Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:46:15.179Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:46:15.221Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:48:23.750Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:48:23.775Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:49:18.790Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:49:18.807Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:49:59.262Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:49:59.295Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:51:31.889Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:51:31.934Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T08:54:09.185Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T08:54:09.245Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T09:01:13.266Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T09:01:13.284Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T09:04:46.820Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T09:04:46.843Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T09:07:21.670Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T09:07:21.688Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T09:10:23.497Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T09:10:23.538Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T09:12:45.265Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T09:12:45.292Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T09:13:06.526Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T09:13:06.544Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T09:16:16.667Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T09:16:16.693Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T09:18:08.127Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T09:18:08.152Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:13:26.801Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:13:26.821Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:16:55.666Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:16:55.682Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:19:17.845Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:19:17.863Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:20:26.892Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:20:26.925Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:21:55.008Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:21:55.026Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:24:44.768Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:24:44.787Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:27:15.084Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:27:15.102Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:28:09.829Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:28:09.849Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:33:13.020Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:33:13.039Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:33:57.014Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:33:57.031Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:36:36.803Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:36:36.819Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:39:56.180Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:39:56.209Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:42:05.440Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:42:05.457Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T11:45:34.998Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T11:45:35.016Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:12:11.030Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:12:11.078Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:12:56.936Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-31T12:15:47.044Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:15:47.064Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:16:20.215Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:16:20.233Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:20:09.533Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:20:09.552Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:21:25.251Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:21:25.272Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:23:50.300Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:23:50.329Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:24:01.558Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-31T12:37:49.463Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:37:49.490Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:42:53.863Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:42:53.891Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:44:59.189Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:44:59.222Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:51:44.057Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:51:44.136Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:55:03.556Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:55:03.587Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T12:58:23.030Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T12:58:23.052Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:00:03.936Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:00:03.954Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:01:52.732Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:01:52.763Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:02:57.549Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-31T13:05:24.532Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:05:24.548Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:24:09.068Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:24:09.136Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:29:37.791Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:29:37.871Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:30:05.438Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:30:05.473Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:30:18.162Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:30:18.182Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:31:26.486Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:31:26.504Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:31:53.606Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:31:53.634Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:33:06.918Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:33:06.935Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:38:00.533Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:38:00.552Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:39:51.832Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:39:51.850Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:41:09.396Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:41:09.428Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:42:10.987Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:42:11.007Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:44:53.107Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:44:53.128Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:45:57.808Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:45:57.826Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:48:09.795Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:48:09.818Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:50:36.667Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:50:36.684Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T13:53:49.193Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T13:53:49.209Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:02:56.584Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:02:56.604Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:03:12.039Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-31T14:04:30.689Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:04:30.709Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:05:28.666Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:05:28.687Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:05:58.814Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-31T14:10:28.561Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:10:28.582Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:11:51.622Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-31T14:12:12.490Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:12:12.509Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:19:05.895Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:19:05.911Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:20:45.579Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:20:45.595Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:21:15.263Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-31T14:21:41.108Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-10-31T14:49:01.140Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:49:01.160Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:49:53.573Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:49:53.595Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:50:42.053Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:50:42.092Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:52:27.551Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:52:27.572Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:53:44.563Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:53:44.580Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-10-31T14:55:23.329Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-10-31T14:55:23.346Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:11:36.923Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:11:37.649Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:14:22.500Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:14:22.521Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:17:02.790Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:17:02.818Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:17:34.630Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:17:34.658Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:19:41.111Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:19:41.128Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:22:50.941Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T06:38:36.017Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:38:36.043Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:39:51.113Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T06:40:14.642Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:40:14.662Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:42:45.141Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:42:45.159Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:42:52.790Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T06:45:11.874Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:45:11.892Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:45:24.426Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T06:45:48.284Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T06:46:28.469Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:46:28.516Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:47:20.817Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:47:20.835Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:47:45.402Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T06:48:04.477Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T06:48:39.752Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:48:39.788Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:48:47.816Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T06:48:52.756Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T06:49:26.611Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T06:49:26.630Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T06:49:40.823Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T07:12:39.969Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T07:12:39.988Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T07:13:08.663Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T07:13:41.618Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T07:13:41.636Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T07:14:32.258Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T07:15:02.372Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T07:21:16.238Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T07:21:16.258Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T07:31:23.094Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T07:31:23.126Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T07:33:10.591Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T07:33:10.625Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T07:33:47.406Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T07:33:47.425Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T07:43:18.944Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T07:43:18.971Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T07:45:19.503Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T07:45:19.521Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T07:48:06.407Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T07:48:06.447Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T07:48:37.771Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T07:48:37.790Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:00:18.974Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:00:19.005Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:02:14.356Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:02:14.394Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:03:32.108Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T08:05:57.341Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:05:57.360Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:07:47.357Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:07:47.376Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:09:49.916Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:09:49.937Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:21:32.651Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:21:32.692Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:22:32.151Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:22:32.173Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:25:01.244Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:25:01.279Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:27:03.766Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T08:29:34.489Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:29:34.525Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:31:42.320Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:31:42.339Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:32:15.362Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T08:32:31.456Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T08:32:40.185Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T08:33:48.028Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:33:48.050Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:50:03.925Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:50:03.942Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:54:36.080Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:54:36.096Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:58:16.551Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:58:16.574Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T08:59:57.224Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T08:59:57.241Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:23:58.492Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:23:58.510Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:25:45.439Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:25:45.455Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:26:41.869Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T09:35:58.640Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:35:58.799Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:36:44.937Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:36:44.954Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:37:46.490Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:37:46.506Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:40:26.094Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T09:44:18.437Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:44:18.469Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:51:18.440Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:51:18.491Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:52:31.734Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:52:31.750Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:52:52.466Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T09:54:14.473Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:54:14.489Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:54:54.010Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:54:54.055Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:55:27.474Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T09:56:53.099Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:56:53.122Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T09:58:31.663Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T09:58:31.686Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T10:42:03.762Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T10:42:03.911Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T10:42:29.972Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T10:42:29.989Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T10:46:25.266Z][QUERY]: SELECT "Todo"."id" AS "Todo_id", "Todo"."text" AS "Todo_text", "Todo"."completed" AS "Todo_completed" FROM "todo" "Todo"
+[2019-11-01T10:47:27.491Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T10:47:27.507Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T11:07:39.747Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T11:07:39.763Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T11:11:26.534Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T11:11:26.550Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T11:22:58.132Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T11:22:58.150Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T11:42:43.167Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T11:42:43.183Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T11:48:41.533Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T11:48:41.551Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T11:53:23.409Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T11:53:23.427Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T11:55:28.973Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T11:55:28.992Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T12:06:00.624Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T12:06:00.642Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T13:18:13.097Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T13:18:13.131Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T13:22:25.879Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T13:22:25.983Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T13:31:06.391Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T13:31:06.426Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T13:34:42.934Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T13:34:42.962Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T13:35:44.364Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T13:35:44.398Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T13:39:38.796Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T13:39:38.849Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T13:40:48.970Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T13:40:49.002Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:10:46.409Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:10:46.475Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:11:16.240Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:11:16.268Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:18:01.380Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:18:01.397Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:22:22.298Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:22:22.315Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:22:53.322Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:22:53.366Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:36:59.712Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:36:59.733Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:38:43.794Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:38:43.815Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:38:43.822Z]No migrations are pending
+[2019-11-01T14:40:26.437Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:40:26.456Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:40:26.463Z][QUERY]: START TRANSACTION
+[2019-11-01T14:40:26.468Z][QUERY]: CREATE TABLE "photo" ("id" SERIAL NOT NULL, "name" character varying(500) NOT NULL, "description" text NOT NULL, "filename" character varying NOT NULL, "views" integer NOT NULL, "isPublished" boolean NOT NULL, CONSTRAINT "PK_723fa50bf70dcfd06fb5a44d4ff" PRIMARY KEY ("id"))
+[2019-11-01T14:40:27.205Z][QUERY]: CREATE TABLE "user" ("id" SERIAL NOT NULL, "email" character varying NOT NULL, "firstName" character varying NOT NULL DEFAULT '', "lastName" character varying NOT NULL DEFAULT '', "initials" character varying NOT NULL DEFAULT '', "skype" character varying, "createdAt" TIMESTAMP NOT NULL DEFAULT now(), "updatedAt" TIMESTAMP NOT NULL DEFAULT now(), CONSTRAINT "UQ_e12875dfb3b1d92d7d7c5377e22" UNIQUE ("email"), CONSTRAINT "PK_cace4a159ff9f2512dd42373760" PRIMARY KEY ("id"))
+[2019-11-01T14:40:27.358Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572619190501,"user1572619190501"]
+[2019-11-01T14:40:27.392Z][QUERY]: COMMIT
+[2019-11-01T14:45:23.906Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:45:23.926Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:50:34.541Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:50:34.560Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:52:41.055Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:52:41.077Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T14:53:38.543Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T14:53:38.565Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T15:12:27.522Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T15:12:27.540Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T15:13:55.865Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T15:13:55.882Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T15:15:50.664Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T15:15:50.682Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T15:18:31.373Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-01T15:18:31.389Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-01T15:22:09.559Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-04T06:16:23.440Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-04T06:28:41.739Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-04T06:29:13.853Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-04T06:31:38.773Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-04T06:33:29.902Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-04T06:36:48.534Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-04T08:24:16.539Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T08:24:16.888Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T09:40:04.707Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T09:40:04.733Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T09:40:27.929Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T09:40:27.951Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T09:40:27.959Z][QUERY]: START TRANSACTION
+[2019-11-04T09:40:27.962Z][QUERY]: CREATE TABLE "role" ("id" SERIAL NOT NULL, "title" character varying NOT NULL, "alias" character varying NOT NULL, "createdAt" TIMESTAMP NOT NULL DEFAULT now(), "updatedAt" TIMESTAMP NOT NULL DEFAULT now(), CONSTRAINT "PK_b36bcfe02fc8de3c57a8b2391c2" PRIMARY KEY ("id"))
+[2019-11-04T09:40:28.325Z][QUERY]: CREATE TABLE "permission" ("id" SERIAL NOT NULL, "title" character varying NOT NULL, "alias" character varying NOT NULL, "conditions" json, "createdAt" TIMESTAMP NOT NULL DEFAULT now(), "updatedAt" TIMESTAMP NOT NULL DEFAULT now(), CONSTRAINT "PK_3b8b97af9d9d8807e41e6f48362" PRIMARY KEY ("id"))
+[2019-11-04T09:40:28.442Z][QUERY]: CREATE TABLE "role_users_user" ("roleId" integer NOT NULL, "userId" integer NOT NULL, CONSTRAINT "PK_46403d6ce64cde119287c876ca3" PRIMARY KEY ("roleId", "userId"))
+[2019-11-04T09:40:28.485Z][QUERY]: CREATE INDEX "IDX_ed6edac7184b013d4bd58d60e5" ON "role_users_user" ("roleId") 
+[2019-11-04T09:40:28.546Z][QUERY]: CREATE INDEX "IDX_a88fcb405b56bf2e2646e9d479" ON "role_users_user" ("userId") 
+[2019-11-04T09:40:28.581Z][QUERY]: CREATE TABLE "permission_roles_role" ("permissionId" integer NOT NULL, "roleId" integer NOT NULL, CONSTRAINT "PK_534958b0063b8ad39335d7bcfd0" PRIMARY KEY ("permissionId", "roleId"))
+[2019-11-04T09:40:28.649Z][QUERY]: CREATE INDEX "IDX_9f44b6228b173c7b9dfb8c6600" ON "permission_roles_role" ("permissionId") 
+[2019-11-04T09:40:28.696Z][QUERY]: CREATE INDEX "IDX_7ec93d4fbf75b063f3ffd2646a" ON "permission_roles_role" ("roleId") 
+[2019-11-04T09:40:28.766Z][QUERY]: ALTER TABLE "role_users_user" ADD CONSTRAINT "FK_ed6edac7184b013d4bd58d60e54" FOREIGN KEY ("roleId") REFERENCES "role"("id") ON DELETE CASCADE ON UPDATE NO ACTION
+[2019-11-04T09:40:28.851Z][QUERY]: ALTER TABLE "role_users_user" ADD CONSTRAINT "FK_a88fcb405b56bf2e2646e9d4797" FOREIGN KEY ("userId") REFERENCES "user"("id") ON DELETE CASCADE ON UPDATE NO ACTION
+[2019-11-04T09:40:28.866Z][QUERY]: ALTER TABLE "permission_roles_role" ADD CONSTRAINT "FK_9f44b6228b173c7b9dfb8c66003" FOREIGN KEY ("permissionId") REFERENCES "permission"("id") ON DELETE CASCADE ON UPDATE NO ACTION
+[2019-11-04T09:40:28.885Z][QUERY]: ALTER TABLE "permission_roles_role" ADD CONSTRAINT "FK_7ec93d4fbf75b063f3ffd2646a5" FOREIGN KEY ("roleId") REFERENCES "role"("id") ON DELETE CASCADE ON UPDATE NO ACTION
+[2019-11-04T09:40:28.933Z][QUERY]: INSERT INTO "migrations"("timestamp", "name") VALUES ($1, $2) -- PARAMETERS: [1572860383110,"rolebased1572860383110"]
+[2019-11-04T09:40:28.942Z][QUERY]: COMMIT
+[2019-11-04T09:41:47.138Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T09:41:47.159Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T09:41:47.165Z]No migrations are pending
+[2019-11-04T12:30:22.194Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T12:30:22.226Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T12:31:13.852Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T12:31:13.875Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T12:31:50.433Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T12:31:50.456Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T12:40:29.546Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-04T12:45:41.231Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-04T12:47:37.994Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-04T12:49:34.285Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T12:49:34.308Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T12:49:56.395Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-04T12:51:17.830Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T12:51:17.849Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T12:51:31.450Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-04T12:52:32.566Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T12:52:32.588Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T12:53:03.565Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-04T12:53:03.576Z][QUERY]: SELECT "Permission"."id" AS "Permission_id", "Permission"."title" AS "Permission_title", "Permission"."alias" AS "Permission_alias", "Permission"."conditions" AS "Permission_conditions", "Permission"."createdAt" AS "Permission_createdAt", "Permission"."updatedAt" AS "Permission_updatedAt" FROM "permission" "Permission"
+[2019-11-04T12:57:34.043Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T12:57:34.079Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T12:58:01.556Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T12:58:01.862Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T13:06:45.116Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T13:06:45.146Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T13:07:48.293Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-04T13:07:48.315Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-04T13:08:11.320Z][QUERY]: SELECT "Permission"."id" AS "Permission_id", "Permission"."title" AS "Permission_title", "Permission"."alias" AS "Permission_alias", "Permission"."conditions" AS "Permission_conditions", "Permission"."createdAt" AS "Permission_createdAt", "Permission"."updatedAt" AS "Permission_updatedAt" FROM "permission" "Permission"
+[2019-11-04T13:08:11.345Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-04T13:17:51.029Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-04T13:17:52.333Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-04T13:19:26.633Z][QUERY]: SELECT "Permission"."id" AS "Permission_id", "Permission"."title" AS "Permission_title", "Permission"."alias" AS "Permission_alias", "Permission"."conditions" AS "Permission_conditions", "Permission"."createdAt" AS "Permission_createdAt", "Permission"."updatedAt" AS "Permission_updatedAt" FROM "permission" "Permission"
+[2019-11-04T13:19:28.986Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-04T13:20:51.436Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-04T13:27:54.043Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-05T07:31:33.389Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T07:31:33.634Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:13:00.531Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:13:00.552Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:18:18.286Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:18:18.304Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:19:49.302Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:19:49.320Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:36:37.739Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:36:37.768Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:40:22.680Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:40:22.702Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:41:14.857Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:41:14.896Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:42:09.302Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:42:09.325Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:44:50.886Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:44:50.915Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:46:26.993Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:46:27.024Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:47:31.946Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:47:31.974Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:49:42.489Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:49:42.515Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:53:29.300Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:53:29.319Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:55:15.742Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:55:15.764Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:57:12.230Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:57:12.250Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T08:59:31.613Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T08:59:31.653Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:00:39.888Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:00:39.926Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:00:45.974Z][QUERY]: START TRANSACTION
+[2019-11-05T09:00:45.985Z][QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["eco@user.com","Heh","Greek","skp","Kek"]
+[2019-11-05T09:00:46.086Z][QUERY]: COMMIT
+[2019-11-05T09:01:36.792Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:01:36.809Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:14:24.799Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:14:24.830Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:19:52.695Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:19:52.714Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:22:37.543Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:22:37.560Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:23:20.550Z][QUERY]: START TRANSACTION
+[2019-11-05T09:23:20.561Z][QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["eco@user.com","Heh","Greek","skp","Kek"]
+[2019-11-05T09:23:20.614Z][FAILED QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["eco@user.com","Heh","Greek","skp","Kek"]
+[2019-11-05T09:23:20.614Z][QUERY ERROR]: error: duplicate key value violates unique constraint "UQ_e12875dfb3b1d92d7d7c5377e22"
+[2019-11-05T09:23:20.618Z][QUERY]: ROLLBACK
+[2019-11-05T09:23:27.651Z][QUERY]: START TRANSACTION
+[2019-11-05T09:23:27.655Z][QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["ec2o@user.com","Heh","Greek","skp","Kek"]
+[2019-11-05T09:23:27.663Z][QUERY]: COMMIT
+[2019-11-05T09:25:16.132Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:25:16.153Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:27:41.198Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:27:41.239Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:28:49.762Z][QUERY]: START TRANSACTION
+[2019-11-05T09:28:49.775Z][QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["ec3o@user.com","Heh","Greek","skp","Kek"]
+[2019-11-05T09:28:49.799Z][QUERY]: COMMIT
+[2019-11-05T09:33:28.533Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:33:28.760Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:34:40.153Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:34:40.175Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:47:43.678Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:47:43.697Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:50:09.823Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:50:09.857Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:51:29.548Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:51:29.566Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:52:26.112Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-05T09:53:56.855Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:53:56.874Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:54:27.981Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-05T09:55:50.081Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:55:50.098Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T09:59:11.406Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T09:59:11.427Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:00:36.718Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:00:37.339Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:01:41.403Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:01:41.421Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:04:30.259Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:04:30.278Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:05:48.175Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:05:48.199Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:06:30.324Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:06:30.344Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:07:19.617Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:07:19.633Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:08:08.998Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:08:09.016Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:09:12.049Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:09:12.065Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:10:16.097Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:10:16.136Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:10:51.572Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:10:51.589Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:11:57.180Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:11:57.202Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:13:43.412Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:13:43.436Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:13:59.635Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:13:59.653Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:17:28.159Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:17:28.178Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:18:37.005Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:18:37.022Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:19:41.761Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:19:41.779Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:31:18.798Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:31:18.816Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:36:32.288Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:36:32.335Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:38:35.569Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:38:35.590Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:39:29.960Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:39:29.976Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:39:59.456Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:39:59.476Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:42:36.352Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:42:36.373Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:43:17.222Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:43:17.239Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:44:16.118Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:44:16.155Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:45:46.860Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:45:46.915Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:46:19.958Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:46:19.987Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:50:15.440Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:50:15.467Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:50:54.909Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:50:54.928Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:56:19.472Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:56:19.672Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:57:28.105Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:57:28.125Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:58:28.464Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:58:28.482Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:59:08.886Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:59:08.903Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T11:59:48.671Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T11:59:48.690Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T12:08:06.052Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T12:08:06.073Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T12:09:23.702Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T12:09:23.722Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T12:11:19.022Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T12:11:19.046Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T12:12:43.079Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T12:12:43.104Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T12:13:47.929Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T12:13:47.955Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T12:21:15.423Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T12:21:15.447Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T12:24:36.265Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-05T12:25:32.134Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T12:25:32.153Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T12:25:37.794Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-05T12:52:51.456Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T12:52:51.483Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:05:24.616Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:05:24.643Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:14:37.297Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:14:37.329Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:18:26.404Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:18:26.436Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:18:32.874Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-05T13:19:23.118Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:19:23.149Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:19:28.520Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-05T13:20:06.994Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:20:07.040Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:33:20.613Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:33:20.653Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:38:12.044Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:38:12.069Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:38:39.420Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:38:39.460Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:38:50.241Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-05T13:40:32.486Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:40:32.504Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:41:52.142Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:41:52.169Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:45:13.819Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:45:13.840Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T13:49:46.497Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T13:49:46.518Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T14:07:18.100Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T14:07:18.146Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T14:32:56.108Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T14:32:56.140Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T14:34:06.899Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T14:34:06.918Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T14:35:56.052Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T14:35:56.071Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T14:47:25.914Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T14:47:25.942Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T14:53:22.676Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T14:53:22.721Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T14:55:51.095Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T14:55:51.112Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-05T14:57:15.934Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-05T14:57:15.954Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T06:11:30.785Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T06:11:31.361Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T06:42:14.390Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T06:42:14.412Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T06:45:30.101Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T06:45:30.118Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T06:47:26.664Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T06:47:26.709Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T06:51:26.406Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T06:51:26.450Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T06:55:39.480Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T06:55:39.496Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T07:03:52.911Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T07:03:52.928Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T07:10:58.751Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T07:10:58.775Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T07:14:34.354Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T07:14:34.375Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T07:30:16.112Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T07:30:16.133Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T07:33:01.916Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T07:33:01.933Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T07:37:26.353Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T07:37:26.386Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T07:57:16.581Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T07:57:16.598Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:12:41.701Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:12:41.721Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:19:37.033Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:19:37.050Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:21:42.624Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:21:42.645Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:23:46.563Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:23:46.579Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:26:29.250Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:26:29.267Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:29:39.107Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:29:39.125Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:33:10.885Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:33:10.906Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:34:29.767Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:34:29.831Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:46:24.905Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:46:24.925Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:47:29.110Z][QUERY]: START TRANSACTION
+[2019-11-06T08:47:29.162Z][QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["e2o@user.com","Heh","Greek","skp","Kek"]
+[2019-11-06T08:47:29.265Z][QUERY]: COMMIT
+[2019-11-06T08:48:58.746Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:48:58.766Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:50:03.015Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:50:03.030Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:53:38.250Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:53:38.281Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:57:11.061Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:57:11.099Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T08:58:43.044Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T08:58:43.070Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:06:06.739Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:06:06.757Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:11:34.692Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:11:34.708Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:13:00.666Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:13:00.682Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:14:51.026Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:14:51.062Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:15:27.405Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:15:27.420Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:16:22.235Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:16:22.251Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:18:54.009Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:18:54.026Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:19:15.978Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:19:15.993Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:19:58.402Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:19:58.441Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:22:00.606Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:22:00.621Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:22:40.519Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T09:23:45.011Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:23:45.042Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:24:12.212Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:24:12.228Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:25:47.010Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:25:47.038Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:29:23.733Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:29:23.751Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:30:33.222Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:30:33.238Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:31:49.301Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T09:32:33.897Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:32:33.915Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:32:50.157Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T09:35:30.443Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:35:30.459Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:35:49.796Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T09:39:13.264Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:39:13.279Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:39:19.336Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T09:41:11.209Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:41:11.232Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:41:15.803Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T09:42:23.745Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T09:44:25.755Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:44:25.771Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:44:39.837Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T09:45:47.561Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:45:47.576Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:46:39.810Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:46:39.825Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:49:49.439Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T09:49:49.455Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T09:50:10.563Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:20:42.460Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:20:42.485Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:21:26.019Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:22:29.693Z][QUERY]: START TRANSACTION
+[2019-11-06T12:22:29.708Z][QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["eco@user.com","Heh","Greek","skp","Kek"]
+[2019-11-06T12:22:29.794Z][FAILED QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["eco@user.com","Heh","Greek","skp","Kek"]
+[2019-11-06T12:22:29.794Z][QUERY ERROR]: error: duplicate key value violates unique constraint "UQ_e12875dfb3b1d92d7d7c5377e22"
+[2019-11-06T12:22:29.800Z][QUERY]: ROLLBACK
+[2019-11-06T12:29:45.842Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:29:45.859Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:30:27.112Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:30:30.213Z][QUERY]: START TRANSACTION
+[2019-11-06T12:30:30.225Z][QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["eco@user.com","Heh","Greek","skp","Kek"]
+[2019-11-06T12:30:30.233Z][FAILED QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["eco@user.com","Heh","Greek","skp","Kek"]
+[2019-11-06T12:30:30.233Z][QUERY ERROR]: error: duplicate key value violates unique constraint "UQ_e12875dfb3b1d92d7d7c5377e22"
+[2019-11-06T12:30:30.238Z][QUERY]: ROLLBACK
+[2019-11-06T12:33:15.187Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:33:15.205Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:33:23.661Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:34:13.151Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:34:13.168Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:34:55.149Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:34:55.167Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:36:47.009Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:36:47.028Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:38:25.979Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:38:25.997Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:38:57.241Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:38:57.259Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:40:05.292Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:40:05.308Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:40:18.561Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:42:40.896Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:42:40.912Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:44:38.289Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:46:31.385Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:46:31.406Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:48:29.143Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:48:29.160Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:49:14.050Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:50:56.086Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:50:56.102Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:51:39.200Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:55:53.138Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:55:53.154Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:57:01.907Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:58:27.264Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T12:58:27.280Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T12:58:31.535Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:58:37.926Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T12:58:43.900Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:01:59.611Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:01:59.626Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:02:05.943Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:02:16.936Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:09:09.264Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:09:09.280Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:09:36.548Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:09:59.042Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:09:59.058Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:10:46.768Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:10:46.784Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:11:23.698Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:11:23.714Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:11:38.059Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:13:36.315Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:13:36.330Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:13:41.493Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:14:23.517Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:14:23.533Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:14:33.814Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:16:37.190Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:16:37.246Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:27:06.668Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:27:06.684Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:27:41.870Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:27:41.886Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:28:07.476Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:32:16.583Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:32:16.598Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:32:27.653Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:33:11.879Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:33:11.894Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:33:23.958Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:33:57.255Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:35:54.061Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:35:54.077Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:35:58.966Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:37:21.616Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:37:21.657Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:37:28.043Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:40:02.019Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:40:02.035Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:40:06.124Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:40:22.134Z][QUERY]: START TRANSACTION
+[2019-11-06T13:40:22.143Z][QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["eco@user.com","Heh","Greek","skp","Kek"]
+[2019-11-06T13:40:22.151Z][FAILED QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["eco@user.com","Heh","Greek","skp","Kek"]
+[2019-11-06T13:40:22.151Z][QUERY ERROR]: error: duplicate key value violates unique constraint "UQ_e12875dfb3b1d92d7d7c5377e22"
+[2019-11-06T13:40:22.155Z][QUERY]: ROLLBACK
+[2019-11-06T13:40:32.577Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:41:21.291Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:41:21.306Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:41:27.724Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:41:31.010Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:42:23.071Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:42:23.087Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:42:27.142Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:42:56.588Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:43:02.803Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:44:39.142Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:44:39.159Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:44:41.965Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:46:26.911Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:46:26.930Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:46:42.417Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:46:42.432Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:46:44.720Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:48:08.523Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:48:08.538Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T13:48:14.531Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T13:52:10.293Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T13:52:10.309Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T14:05:16.358Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T14:05:16.373Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T14:06:40.756Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T14:06:40.772Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
+[2019-11-06T14:07:44.359Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-06T14:07:44.363Z][QUERY]: SELECT "Permission"."id" AS "Permission_id", "Permission"."title" AS "Permission_title", "Permission"."alias" AS "Permission_alias", "Permission"."conditions" AS "Permission_conditions", "Permission"."createdAt" AS "Permission_createdAt", "Permission"."updatedAt" AS "Permission_updatedAt" FROM "permission" "Permission"
+[2019-11-06T14:08:42.914Z][QUERY]: SELECT "Role"."id" AS "Role_id", "Role"."title" AS "Role_title", "Role"."alias" AS "Role_alias", "Role"."createdAt" AS "Role_createdAt", "Role"."updatedAt" AS "Role_updatedAt" FROM "role" "Role"
+[2019-11-06T14:08:42.938Z][QUERY]: SELECT "Permission"."id" AS "Permission_id", "Permission"."title" AS "Permission_title", "Permission"."alias" AS "Permission_alias", "Permission"."conditions" AS "Permission_conditions", "Permission"."createdAt" AS "Permission_createdAt", "Permission"."updatedAt" AS "Permission_updatedAt" FROM "permission" "Permission"
+[2019-11-06T14:09:28.197Z][QUERY]: SELECT "User"."id" AS "User_id", "User"."email" AS "User_email", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."initials" AS "User_initials", "User"."skype" AS "User_skype", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "user" "User"
+[2019-11-06T14:09:33.219Z][QUERY]: START TRANSACTION
+[2019-11-06T14:09:33.229Z][QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["ecro@user.com","Heh","Greek","skp","Kek"]
+[2019-11-06T14:09:33.237Z][QUERY]: COMMIT
+[2019-11-06T14:09:55.143Z][QUERY]: START TRANSACTION
+[2019-11-06T14:09:55.146Z][QUERY]: INSERT INTO "user"("email", "firstName", "lastName", "initials", "skype", "createdAt", "updatedAt") VALUES ($1, $2, $3, $4, $5, DEFAULT, DEFAULT) RETURNING "id", "firstName", "lastName", "initials", "createdAt", "updatedAt" -- PARAMETERS: ["ecr4o@user.com","Heh","Greek","skp","Kek"]
+[2019-11-06T14:09:55.153Z][QUERY]: COMMIT
+[2019-11-06T14:13:30.044Z][QUERY]: SELECT * FROM "information_schema"."tables" WHERE "table_schema" = current_schema() AND "table_name" = 'migrations'
+[2019-11-06T14:13:30.059Z][QUERY]: SELECT * FROM "migrations" "migrations" ORDER BY id DESC
