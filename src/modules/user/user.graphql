@@ -3,7 +3,9 @@ type Query {
 }
 
 type Mutation {
-  createUser(createUserInput: CreateUserInput): User
+  createUser(createUserInput: UserInput): User
+  updateUser(updateUserInput: UserInput): User
+  removeUser(userId: ID): JSON
 }
 
 type Subscription {
@@ -11,20 +13,23 @@ type Subscription {
 }
 
 type User {
-  id: Int
+  id: ID
   email: String
   firstName: String
   lastName: String
   initials: String
   skype: String
+  roles: [Role]
   createdAt: String
   updatedAt: String
 }
 
-input CreateUserInput {
+input UserInput {
+  id: ID
   email: String
   firstName: String
   lastName: String
   initials: String
   skype: String
 }
+

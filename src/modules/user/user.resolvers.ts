@@ -28,6 +28,23 @@ export class UserResolvers {
     return createdUser;
   }
 
+  @Mutation('updateUser')
+  async update(@Args('updateUserInput') args: any): Promise<User> {
+    const updatedUser = await this.userRepository.createQueryBuilder()
+        .update(User)
+        .set({...args})
+        .where('id = :id', { id: args.id })
+        .execute();
+
+    // await pubSub.publish('userCreated', { updateCreated: updatedUser });
+    return {...args};
+  }
+
+  @Mutation('removeUser')
+  async remove(@Args('userId') userId: string | number): Promise<any> {
+    return await this.userRepository.delete(userId);
+  }
+
   @Subscription('userCreated')
   userCreated() {
     return pubSub.asyncIterator('userCreated');

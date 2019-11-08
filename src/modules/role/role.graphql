@@ -18,6 +18,7 @@ type Role {
   createdAt: String
   updatedAt: String
   users: [User]
+  permissions: [Permission]
 }
 
 input CreateRoleInput {
