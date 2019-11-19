@@ -1,4 +1,4 @@
-import {Body, Controller, Post, Req} from '@nestjs/common';
+import {Body, Controller, Get, Post, Req} from '@nestjs/common';
 import {Credentials} from 'google-auth-library';
 import {OAuth2Service} from './oauth2/oauth2.service';
 

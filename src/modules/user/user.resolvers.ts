@@ -1,15 +1,17 @@
-import {Request, UseGuards} from '@nestjs/common';
+import {UseGuards} from '@nestjs/common';
 import {Args, Mutation, Query, Resolver, Subscription} from '@nestjs/graphql';
 import {GqlAuthGuard} from '../../auth/gqlauth.guard';
 import {User} from './user.entity';
 import {InjectRepository} from '@nestjs/typeorm';
 import {Repository} from 'typeorm';
 import {PubSub} from 'graphql-subscriptions';
+import {Roles} from '../../common/decorators/role.decorator';
+import { RolesGuard } from '../../common/guards/role.guard';
 
 const pubSub = new PubSub();
 
 @Resolver('User')
-@UseGuards(GqlAuthGuard)
+@UseGuards(GqlAuthGuard, RolesGuard)
 export class UserResolvers {
 
   constructor(
@@ -19,6 +21,12 @@ export class UserResolvers {
   @Query()
   async getUsers() {
     return await this.userRepository.find();
+  }
+
+  @Query()
+  @Roles('admin')
+  async protectedByRole() {
+    return 'Admin Content';
   }
 
   @Mutation('createUser')

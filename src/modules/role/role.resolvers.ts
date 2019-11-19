@@ -25,7 +25,9 @@ export class RoleResolvers {
 
   @Mutation('createRole')
   async create(@Args('createRoleInput') args: any): Promise<Role> {
-    const createdRole = await this.roleRepository.save({...args});
+    const role = {...args};
+    delete role.permissions;
+    const createdRole = await this.roleRepository.save(role);
     await pubSub.publish('roleCreated', { roleChanged: Object.assign( createdRole, {status: 'CREATED'} ) });
     return createdRole;
   }
