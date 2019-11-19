@@ -7,5 +7,6 @@ import {UserResolvers} from './user.resolvers';
 @Module({
     imports:    [TypeOrmModule.forFeature([User]), AuthModule],
     providers:  [UserResolvers],
+    exports:    [UserResolvers],
 })
 export class UserModule {}

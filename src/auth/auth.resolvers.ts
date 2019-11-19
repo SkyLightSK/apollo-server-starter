@@ -10,4 +10,9 @@ export class AuthResolvers {
     return await this.oauth2.getOAuthClient(args.code);
   }
 
+  @Mutation('logout')
+  logout(): any | void {
+    return true;
+  }
+
 }

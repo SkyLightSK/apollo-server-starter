@@ -2,30 +2,33 @@ scalar JSON
 
 type Query {
   getPermissions: [Permission]
-#  cat(id: ID!): Permission
 }
 
-#type Mutation {
-#  createPermission(createPermissionInput: CreatePermissionInput): Permission
-#}
-#
-#type Subscription {
-#  catCreated: Permission
-#}
+type Mutation {
+  createPermission(createPermissionInput: PermissionInput): Permission
+  updatePermission(updatePermissionInput: PermissionInput): Permission
+  removePermission(permissionId: ID): JSON
+}
+
+type Subscription {
+  permissionChanged: Permission
+}
 
 type Permission {
-  id: Int
+  id: ID
   title: String
   alias: String
   conditions: JSON
+  status: String
   createdAt: String
   updatedAt: String
-  roles: [Role]
 }
 
-input CreatePermissionInput {
+input PermissionInput {
+  id: ID
   title: String
   alias: String
   createdAt: String
   updatedAt: String
+  conditions: JSON
 }

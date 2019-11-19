@@ -6,10 +6,13 @@ type Mutation {
   createUser(createUserInput: UserInput): User
   updateUser(updateUserInput: UserInput): User
   removeUser(userId: ID): JSON
+  addRoleToUser(userId: Int, roleId: Int): User
 }
 
 type Subscription {
   userCreated: User
+  userUpdated: User
+  usersChanged: User
 }
 
 type User {
@@ -20,6 +23,7 @@ type User {
   initials: String
   skype: String
   roles: [Role]
+  status: String
   createdAt: String
   updatedAt: String
 }
@@ -31,5 +35,7 @@ input UserInput {
   lastName: String
   initials: String
   skype: String
+  roles: [RoleInput]
+  updatedAt: String
 }
 

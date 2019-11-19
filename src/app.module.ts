@@ -11,6 +11,7 @@ import * as GraphQLJSON from 'graphql-type-json';
 import {PubSub} from 'graphql-subscriptions';
 import {OAuth2Service} from './auth/oauth2/oauth2.service';
 import {AuthModule} from './auth/auth.module';
+import { SearchModule } from './modules/search/search.module';
 
 @Module({
   imports: [
@@ -40,6 +41,7 @@ import {AuthModule} from './auth/auth.module';
     UserModule,
     RoleModule,
     PermissionModule,
+    SearchModule,
   ],
   providers: [
     {
