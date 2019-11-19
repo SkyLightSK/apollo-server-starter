@@ -1,9 +1,7 @@
 import {Module, UnauthorizedException} from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { PhotoModule } from './photo/photo.module';
 import * as ormconfig from './ormconfig';
 import {GqlModuleOptions, GraphQLModule} from '@nestjs/graphql';
-import { CatsModule } from './cats/cats.module';
 import { UserModule } from './modules/user/user.module';
 import { RoleModule } from './modules/role/role.module';
 import { PermissionModule } from './modules/permission/permission.module';
@@ -16,7 +14,6 @@ import { SearchModule } from './modules/search/search.module';
 @Module({
   imports: [
     TypeOrmModule.forRoot( ormconfig ),
-    CatsModule,
     GraphQLModule.forRootAsync({
       // useClass: GraphqlConfigService,
       inject: [OAuth2Service],
@@ -37,7 +34,6 @@ import { SearchModule } from './modules/search/search.module';
         },
       }) as GqlModuleOptions,
     }),
-    PhotoModule,
     UserModule,
     RoleModule,
     PermissionModule,
