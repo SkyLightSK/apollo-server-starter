@@ -31,7 +31,7 @@
     "@nestjs/typeorm": "6.2.0",
     "@types/passport-http-bearer": "^1.0.34",
     "apollo-server-express": "^2.9.7",
-    "class-validator": "^0.10.2",
+    "class-validator": "^0.14.0",
     "dotenv": "^8.2.0",
     "google-auth-library": "^5.5.1",
     "googleapis": "^44.0.0",
